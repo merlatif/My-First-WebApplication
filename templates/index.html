@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First_First-WebApp </title>
+</head>
+<body>
+<h1>Welcome this response is working 'and' I am coming from html</h1>
+{{key1}}
+<a href="{% url 'result' %}">CLICK HERE FOR THE RESULTS</a>
+<form action="{% url 'result' %}"> 
+    {% csrf_token %}
+{#    <input type="text" name="user_age">#}
+{#    <br></br>#}
+    <textarea cols="40" rows="10" name="Article"></textarea>
+    <input type="text" name="user_name">
+    <br></br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
